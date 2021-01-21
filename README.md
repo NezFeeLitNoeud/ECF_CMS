@@ -1,3 +1,8 @@
+# FRONT-END : Wordpress
+Url : https://ecfcms.wordpress.com/
+
+# BACK-END : Strapi
+
 - Récupération du Token pour effectué les requetes nécéssitant d'être authentifié -
 Méthode : POST
 URL : http://localhost:1337/auth/local
