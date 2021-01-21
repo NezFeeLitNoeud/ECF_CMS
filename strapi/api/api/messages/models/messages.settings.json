@@ -15,14 +15,13 @@
       "type": "text",
       "required": true
     },
-    "messages_users": {
-      "plugin": "admin",
-      "collection": "user"
+    "messages_user": {
+      "plugin": "users-permissions",
+      "model": "user"
     },
-    "messages_topics": {
-      "collection": "topic",
+    "messages_topic": {
       "via": "messages",
-      "dominant": true
+      "model": "topic"
     },
     "messages_creation_date": {
       "type": "datetime"
