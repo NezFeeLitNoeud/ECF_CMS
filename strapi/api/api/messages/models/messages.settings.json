@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "messages",
+  "info": {
+    "name": "messages",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "messages_corps": {
+      "type": "text",
+      "required": true
+    },
+    "messages_users": {
+      "plugin": "admin",
+      "collection": "user"
+    },
+    "messages_topics": {
+      "collection": "topic",
+      "via": "messages",
+      "dominant": true
+    },
+    "messages_creation_date": {
+      "type": "datetime"
+    }
+  }
+}
