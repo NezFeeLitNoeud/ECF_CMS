@@ -27,7 +27,6 @@ Content-Type: application/json
 Content-Length: 113
 
 - Un Utilisateur Authentifié peut créer un message associé à un sujet de discussion -
-
 Méthode : POST
 URL : http://localhost:1337/messages
 Body : {
